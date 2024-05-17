@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game On - Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1a1a1a; /* Dark background */
+      color: #ffffff; /* White text */
+      margin-top: 70px; /* Adjust for fixed navbar */
+    }
+    .navbar {
+      background-color: #000000; /* Black navbar */
+    }
+    .navbar-brand {
+      color: #ffffff !important; /* White navbar text */
+      font-size: 2rem; /* Larger font size */
+      font-weight: bold; /* Bold font weight */
+      text-transform: uppercase; /* Uppercase text */
+      letter-spacing: 2px; /* Letter spacing */
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff !important; /* White navbar text */
+      font-weight: bold; /* Bold font weight */
+      text-transform: uppercase; /* Uppercase text */
+      letter-spacing: 1px; /* Letter spacing */
+    }
+    .jumbotron {
+      background-image: url('https://via.placeholder.com/1920x1080'); /* Game background image */
+      background-size: cover;
+      color: #ffffff; /* White text */
+      padding: 100px 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .jumbotron h1 {
+      font-size: 4rem; /* Larger font size */
+    }
+    .jumbotron .lead {
+      font-size: 1.5rem; /* Larger font size */
+    }
+    .jumbotron .btn {
+      font-size: 1.5rem; /* Larger font size */
+      padding: 15px 30px; /* Larger button padding */
+      border-radius: 30px; /* Rounded button */
+      background-color: #ff7f50; /* Coral color */
+      border-color: #ff7f50; /* Coral border color */
+      transition: all 0.3s ease-in-out; /* Smooth transition */
+    }
+    .jumbotron .btn:hover {
+      background-color: #ff6347; /* Darker coral color on hover */
+      border-color: #ff6347; /* Darker coral border color on hover */
+    }
+    .feature-box {
+      background-color: #000000; /* Black background */
+      color: #ffffff; /* White text */
+      border-radius: 20px; /* Rounded corners */
+      padding: 30px;
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1); /* White box shadow */
+      transition: transform 0.3s ease-in-out;
+      margin-bottom: 30px; /* Added margin bottom */
+    }
+    .feature-box:hover {
+      transform: translateY(-10px); /* Move up on hover */
+    }
+    .feature-icon {
+      font-size: 5rem; /* Larger font size */
+      color: #ff7f50; /* Coral color */
+      margin-bottom: 20px;
+    }
+    .game-img {
+      border-radius: 20px; /* Rounded corners for game images */
+    }
+    .btn-cool {
+      background-color: #ff7f50; /* Coral color */
+      border-color: #ff7f50; /* Coral border color */
+      transition: all 0.3s ease-in-out; /* Smooth transition */
+    }
+    .btn-cool:hover {
+      background-color: #ff6347; /* Darker coral color on hover */
+      border-color: #ff6347; /* Darker coral border color on hover */
+    }
+    .leaderboard th, .leaderboard td {
+      font-size: 1.2rem; /* Larger font size for leaderboard */
+    }
+    .footer {
+      background-color: #000000; /* Black footer */
+      color: #ffffff; /* White text */
+      padding: 20px 0;
+      position: fixed; /* Fixed position */
+      bottom: 0; /* Stick to the bottom */
+      width: 100%; /* Full width */
+      z-index: 1000; /* Higher z-index */
+    }
+    .footer p {
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">The Game is On</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1 class="display-4">🎮 The Game is On! 🎉</h1>
+    <p class="lead">Welcome to our vibrant gaming world.</p>
+    <a href="#" class="btn btn-success btn-lg btn-cool">Play Now 🚀</a>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <i class="fas fa-gamepad feature-icon"></i>
+          <h3>Immersive Gameplay</h3>
+          <p>Experience thrilling gameplay with stunning graphics.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <i class="fas fa-users feature-icon"></i>
+          <h2>Multiplayer Action</h2>
+          <p>Compete with friends and players worldwide in real-time.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <i class="fas fa-globe feature-icon"></i>
+          <h2>Endless Fun</h2>
+          <p>Explore vast worlds and embark on epic adventures.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Selection Menu -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Choose Your Game 🎮</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x300" class="card-img-top game-img" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">Game 1</h5>
+            <p class="card-text">Description of Game 1.</p>
+            <a href="#" class="btn btn-primary btn-cool">Play Now 🚀</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x300" class="card-img-top game-img" alt="Game 2">
+          <div class="card-body">
+            <h5 class="card-title">Game 2</h5>
+            <p class="card-text">Description of Game 2.</p>
+            <a href="#" class="btn btn-primary btn-cool">Play Now 🚀</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x300" class="card-img-top game-img" alt="Game 3">
+          <div class="card-body">
+            <h5 class="card-title">Game 3</h5>
+            <p class="card-text">Description of Game 3.</p>
+            <a href="#" class="btn btn-primary btn-cool">Play Now 🚀</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaderboard -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Leaderboard 🏆</h2>
+    <table class="table leaderboard">
+      <thead>
+        <tr>
+          <th scope="col">Rank</th>
+          <th scope="col">Player</th>
+          <th scope="col">Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Player 1</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Player 2</td>
+          <td>950</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Player 3</td>
+          <td>900</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 Game On. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
